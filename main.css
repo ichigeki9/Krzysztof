@@ -1,0 +1,453 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+nav .fa-bars {
+	color: #000000;
+}
+.navbar {
+	padding: 1rem;
+	font-size: 1.2rem;
+	z-index: 2;
+}
+.navbar a {
+	font-size: 1.4rem;
+}
+.nav-link{
+	text-transform: uppercase;
+}
+.nav-link:hover{
+	color: #0e0b0b;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #ebe7f8;
+}
+.headerText {
+	margin-top: 2rem;
+	text-align: center;
+	padding: 1rem;
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.headerText h1 {
+	font-size: 2.5rem;
+	margin-bottom: 3rem;
+}
+.headerText p {
+	font-size: 1.3rem;
+}
+
+.headerImg {
+	padding: 3rem 1rem;
+	width: 70%;
+	height: 100%;
+}
+
+.headerImg img {
+	width: 100%;
+	height: 100%;
+}
+
+/* Globals */
+.section_title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 2rem 0;
+	text-transform: uppercase;
+}
+
+/* ABOUT ME  */
+section {
+	padding: 3rem 0;
+}
+.aboutImg {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1.5rem;
+}
+
+.aboutImg img {
+	width: 100%;
+	height: 100%;
+}
+.aboutText {
+	padding: 2rem;
+	font-size: 1.2rem;
+}
+
+/* COURSES */
+.courses {
+	background-color: #ebe7f8;
+}
+
+/* .weapons {
+	height: 70rem;
+} */
+/* COURSES */
+.card {
+	padding: 0.5rem;
+	width: 70%;
+	height: 34rem;
+}
+.card img {
+	height: 20rem;
+}
+
+
+/* .circle i{
+	width: 0px;
+	height: 0px;
+	} */
+	
+/* CONTACT */
+.contact{
+	background-color:#ebe7f8 ;
+}
+.contactContainer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.contactContainer img{
+	width: 40%;
+	margin-bottom: 2rem;
+}
+.logoContact{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+}
+.circleContactContainer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	/* border: 1px solid black; */
+}
+.circle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	border: 1px solid white;
+	width: 70px;
+	height: 70px;
+	margin: 1rem;
+	border-radius: 50%;
+	/* transition: background-color .5s; */
+	transition: color 0.5s, background-color, scale 0.5s;
+	font-size: 1.3rem;
+}
+.circle:hover {
+	cursor: pointer;
+	color: rgb(255, 255, 255);
+	scale: 1.2;
+	background-color: #000000;
+}
+.circleContactContainer a {
+	text-decoration: none;
+	color: #000;
+}
+.circleBox{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 1.3rem;
+}
+
+/* FOTER */
+
+footer {
+	background-color: #dfdfdf;
+	
+}
+.footerContainer{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.text {
+	text-align: center;
+}
+
+
+@media (min-width: 576px) {
+	.section_title h2 {
+		font-size: 2rem;
+	}
+	
+	/* ABOUT ME  */
+	
+	.aboutImg {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 1rem;
+	}
+	.aboutText {
+		padding: 1.5rem;
+		font-size: 1.4rem;
+	}
+
+	/* COURSES */
+	.card {
+		padding: 0.5rem;
+		width: 70%;
+	}
+	/* CONTACT */
+	.contactContainer img{
+		margin-bottom: 3rem;
+		width: 45%;
+}
+.circle {
+	width: 80px;
+	height: 80px;
+	margin: 1.5rem;
+	font-size: 1.5rem;
+}
+.circleBox{
+	font-size: 1.7rem;
+}
+
+}
+
+@media (min-width: 768px) {
+	.section_title h2 {
+		font-size: 3rem;
+	}
+
+	.header {
+		flex-direction: row;
+	}
+
+	.headerText {
+		text-align: left;
+		margin-top: 0rem;
+		padding: 2rem;
+		width: 60%;
+	}
+	.headerText h1 {
+		font-size: 2.3rem;
+		margin-bottom: 2rem;
+	}
+
+	.headerText p {
+		font-size: 1.2rem;
+	}
+
+	.headerImg {
+		padding: 3rem;
+		width: 40%;
+		height: 100%;
+	}
+
+	/* ABOUT */
+
+	.aboutContainer {
+		display: flex;
+		align-items: start;
+		justify-content: center;
+	}
+	.aboutImg {
+		padding: 0.5rem;
+	}
+	.aboutText {
+		padding: 1.4rem;
+		font-size: 1.2rem;
+	}
+	/* COURSES */
+	.card {
+		padding: 0.5rem;
+		width: 40%;
+	}
+	/* CONTACT */
+	.circleContactContainer{
+		flex-direction: row;
+		align-items: start;
+	}
+	.circleBox{
+		width: 50%;
+	}
+	.circleBox p{
+		text-align: center;
+		text-wrap: wrap;
+	}
+
+	/* CONTACT */
+	.contactContainer img{
+		margin-bottom: 3rem;
+		width: 45%;
+}
+.circle {
+	width: 80px;
+	height: 80px;
+	margin: 1.2rem;
+	font-size: 1.5rem;
+}
+.circleBox{
+	font-size: 1.5rem;
+}
+
+}
+
+@media (min-width: 992px) {
+	.section_title {
+		font-size: 3rem;
+		margin: 3rem 0;
+	}
+
+	.headerText {
+		padding: 2rem;
+		width: 60%;
+	}
+	.headerText h1 {
+		font-size: 3rem;
+		margin-bottom: 2rem;
+	}
+	.headerText p {
+		font-size: 1.4rem;
+	}
+
+	.headerImg {
+		padding: 3rem;
+		width: 40%;
+		height: 100%;
+	}
+	.headerImg img {
+		width: 90%;
+		height: 90%;
+	}
+	/* ABOUT */
+	.aboutText {
+		width: 40%;
+		padding: 1rem 1.5rem;
+		font-size: 1.3rem;
+	}
+	.aboutImg {
+		width: 40%;
+	}
+	/* COURSES */
+	.card {
+		padding: 0.5rem;
+		width: 30%;
+	}
+
+		/* CONTACT */
+		.logoContact{
+			margin-bottom: 1.5rem;
+		}
+		.contactContainer img{
+			margin-bottom: 3rem;
+			width: 50%;
+	}
+	.circle {
+		width: 85px;
+		height: 85px;
+		margin: 1.2rem;
+		font-size: 1.6rem;
+	}
+	.circleBox{
+		font-size: 1.6rem;
+	}
+	
+
+
+}
+
+@media (min-width: 1200px) {
+	.headerText h1 {
+		font-size: 4rem;
+	}
+	.headerText p {
+		font-size: 1.5rem;
+	}
+	.headerImg img {
+		width: 90%;
+		height: 90%;
+	}
+	/* ABOUT */
+	.aboutText {
+		width: 40%;
+		padding: 1rem 1rem;
+		font-size: 1.5rem;
+		margin-left: 1rem;
+	}
+	.aboutImg {
+		width: 40%;
+	}
+	/* COURSES */
+	.card {
+		padding: 0.5rem;
+		width: 30%;
+	}
+}
+
+@media (min-width: 1400px) {
+	.headerText {
+		padding: 3rem;
+		width: 50%;
+	}
+	.headerText h1 {
+		font-size: 4rem;
+		margin-bottom: 4rem;
+	}
+	.headerText p {
+		font-size: 1.7rem;
+	}
+
+	.headerImg {
+		padding: 4rem;
+		width: 38%;
+		height: 100%;
+	}
+	.headerImg img {
+		width: 80%;
+		height: 80%;
+	}
+	/* ABOUT */
+	.aboutText {
+		width: 45%;
+		padding: 1rem 1rem;
+		font-size: 1.8rem;
+		margin-left: 1rem;
+	}
+	.aboutImg {
+		width: 43%;
+	}
+
+	/* COURSES */
+	.card {
+		padding: 0.5rem;
+		width: 22%;
+	}
+	/* WEAPONS */
+	.weaponsContainer {
+		flex-direction: column;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.carousel {
+		width: 90%;
+	}
+}
